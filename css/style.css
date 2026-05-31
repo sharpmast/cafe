@@ -348,7 +348,7 @@ transform: scale(1.03);
 .delivery__items {
     margin-top: 32px;
     justify-content: center;
-    row-gap: 40px;
+    gap: 40px;
 }
 
 .delivery__img {
@@ -597,6 +597,7 @@ outline: none;
 }
 .delivery__card-title{
     margin-top: 0;
+    text-align:center;
 }
 .say{
     padding-block: 50px;
