@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>cafe</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#" class="logo"><img src="img/logo_coffe.png" alt="logo"></a>
+                </div>
+                <nav class="header__menu menu">
+                    <ul class="header__list menu__list">
+                        <li><a class="menu__link" href="#about">About us</a></li>
+                        <li><a class="menu__link" href="#product">Our Product</a></li>
+                        <li><a class="menu__link" href="#delivery">Delivery</a></li>
+                    </ul>
+                </nav>
+                <div class="header__buttons">
+                    <form data-da=".menu, 575,first" action="#" class="header__form"><button type="submit"
+                            class="header__search">
+                            <img src="img/search-icon.svg" alt="search">
+                        </button>
+                        <input type="text" placeholder="Cappuccino" class="header__input">
+                    </form>
+                    <div class="header__curt"><button class="cart-button"><img src="img/cart-black.svg"
+                                alt="cart"></button></div>
+                </div>
+                <div class="menu__icon"><span></span></div>
+            </div>
+        </header>
+        <div class="overlay"></div>
+        <main class="main">
+            <section class="hero anim">
+                <div class="hero__container">
+                    <div class="hero__text">
+                        <h1 class="hero__title">Enjoy your <span>coffee</span> before your activity</h1>
+                        <div class="hero__subtitle">
+                            <p>Boost your productivity and build your mood with a glass of coffee in the morning </p>
+                        </div>
+                        <div class="hero__buttons">
+                            <div class="hero__btn">
+                                <button class="hero__button button--black"><span>Order now</span>
+                                    <span class="button__img"><img src="img/cart-yellow.svg" alt="icon"></span>
+                                </button>
+                            </div>
+                            <div class="hero__btn">
+                                <button>More menu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__images">
+                        <div class="hero__img-decor"><img src="img/heroCofee-decor.png" alt="decor"></div>
+                        <div class="hero__image-items">
+                            <div class="hero__img-content cup"><img src="img/hero-cofee.png" alt="cofee">
+                                <div class="steam">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <div class="hero__images-raiting">
+                                <div class="hero__raiting raiting">Cappuccino</div>
+                                <div class="hero__raiting raiting">
+                                    <p>4.8</p><span></span>
+                                </div>
+                                <div class="hero__raiting raiting">18K</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__decor decor__img decor-bg"><img src="img/hero-Bg.jpg" alt="bg"></div>
+            </section>
+            <section class="popular">
+                <div class="popular__container">
+                    <h2 class="popular__title title">Popular <span>Now</span></h2>
+                    <div class="popular__items items">
+                        <div class="popular__card card">
+                            <div class="popular__img card__img cup"><img src="img/popular1.jpg" alt="cofee">
+                                <div class="steam"><span></span><span></span><span></span></div>
+                                <div class="card__img-raiting raiting">4.8<span></span></div>
+                            </div>
+                            <div class="popular__card-title card-title"><span>Vanilla Latte</span>
+                                <span>24k</span>
+                            </div>
+                            <div class="popular__buttons">
+                                <button class="popular__btn">Hot</button>
+                                <button class="popular__btn">Cold</button>
+                                <button class=" __img btn--cart"><img src="img/cart-yellow.svg" alt="cart"></button>
+                            </div>
+                        </div>
+                        <div class="popular__card card">
+                            <div class="popular__img card__img cup"><img src="img/popular2.jpg" alt="cofee">
+                                <div class="steam"><span></span><span></span><span></span></div>
+                                <div class="card__img-raiting raiting">4.8<span></span></div>
+                            </div>
+                            <div class="popular__card-title card-title"><span>Espresso</span>
+                                <span>14k</span>
+                            </div>
+                            <div class="popular__buttons">
+                                <button class="popular__btn">Hot</button>
+                                <button class="popular__btn">Cold</button>
+                                <button class=" __img btn--cart"><img src="img/cart-yellow.svg" alt="cart"></button>
+                            </div>
+                        </div>
+                        <div class="popular__card card">
+                            <div class="popular__img card__img cup"><img src="img/popular3.jpg" alt="cofee">
+                                <div class="steam"><span></span><span></span><span></span></div>
+                                <div class="card__img-raiting raiting">4.8<span></span></div>
+                            </div>
+                            <div class="popular__card-title card-title"><span>Hazelnut Latte</span>
+                                <span>11k</span>
+                            </div>
+                            <div class="popular__buttons">
+                                <button class="popular__btn">Hot</button>
+                                <button class="popular__btn">Cold</button>
+                                <button class=" __img btn--cart"><img src="img/cart-yellow.svg" alt="cart"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="delivery" class="delivery anim">
+                <div class="delivery__container">
+                    <h2 class="delivery__title title">How to use delivery <span>service</span></h2>
+                    <div class="delivery__items items">
+                        <div class="delivery__card">
+                            <div class="delivery__img"><img src="img/del1.png" alt="truck"></div>
+                            <div class="delivery__card-title card-title">choose your coffee</div>
+                            <div class="delivery__text">
+                                <p>
+                                    there are 20+ coffees for you
+                                </p>
+                            </div>
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__img"><img src="img/del2.png" alt="truck"></div>
+                            <div class="delivery__card-title card-title">we delivery it to you</div>
+                            <div class="delivery__text">
+                                <p>
+                                    Choose delivery service
+                                </p>
+                            </div>
+                        </div>
+                        <div class="delivery__card">
+                            <div class="delivery__img"><img src="img/del3.png" alt="truck"></div>
+                            <div class="delivery__card-title card-title">Enjoy your coffee</div>
+                            <div class="delivery__text">
+                                <p>
+                                    Choose delivery service
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="about" class="about anim">
+                <div class="about__container">
+                    <div class="about__items">
+                        <div class="about__image">
+                            <div class="about__img cup"><img src="img/about.jpg" alt="cofee">
+                                <div class="steam"><span></span><span></span><span></span></div>
+                            </div>
+                        </div>
+                        <div class="about__text">
+                            <h2 class="about__title title">About <span>us</span></h2>
+                            <div class="about__subtitle card-title">We provide quality coffee, and ready to deliver.
+                            </div>
+                            <div class="about__text-text">
+                                <p>
+                                    We are a company that makes and distributes delicious drinks. our main product is
+                                    made with a secret recipe and available in stores worldwide.
+                                </p>
+                            </div>
+                            <div class="about__button"><button class="button--black">Get your coffee</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="decor__img"><img src="img/about-bg.jpg" alt="bg"></div>
+            </div>
+            <section id="product" class="special anim">
+                <div class="special__container">
+                    <h2 class="special__title title">Special menu <span>for you</span></h2>
+                    <div class="special__items items">
+                        <div class="special__card card">
+                            <div class="special__img card__img"><img src="img/special1.jpg" alt="cofee">
+                                <div class="card__img-raiting raiting">4.8<span></span></div>
+                            </div>
+                            <div class="special__card-title card-title"><span>Sandwich</span>
+                                <span>24k</span>
+                            </div>
+                            <div class="special__buttons">
+                                <div class="special__buttons-text">
+                                    <p>
+                                        bread with meat and vegetables
+                                    </p>
+                                </div>
+                                <button class=" __img btn--cart"><img src="img/cart-yellow.svg" alt="cart"></button>
+                            </div>
+                        </div>
+                        <div class="special__card card">
+                            <div class="special__img card__img cup"><img src="img/special2.jpg" alt="cofee">
+                                <div class="steam"><span></span><span></span><span></span></div>
+                                <div class="card__img-raiting raiting">4.8<span></span></div>
+                            </div>
+                            <div class="special__card-title card-title"><span>Hot Milk</span>
+                                <span>14k</span>
+                            </div>
+                            <div class="special__buttons">
+                                <div class="special__buttons-text">
+                                    <p>
+                                        Hot Milk with less sugar
+                                    </p>
+                                </div>
+                                <button class=" __img btn--cart"><img src="img/cart-yellow.svg" alt="cart"></button>
+                            </div>
+                        </div>
+                        <div class="special__card card">
+                            <div class="special__img card__img"><img src="img/special3.jpg" alt="cofee">
+                                <div class="card__img-raiting raiting">4.8<span></span></div>
+                            </div>
+                            <div class="special__card-title card-title"><span>Coffe Ice Cream</span>
+                                <span>11k</span>
+                            </div>
+                            <div class="special__buttons">
+                                <div class="special__buttons-text">
+                                    <p>
+                                        Coffe with ice cream vanilla
+                                    </p>
+                                </div>
+                                <button class=" __img btn--cart"><img src="img/cart-yellow.svg" alt="cart"></button>
+                            </div>
+                        </div>
+                        <div class="special__card card">
+                            <div class="special__img card__img cup"><img src="img/special4.jpg" alt="cofee">
+                                <div class="steam"><span></span><span></span><span></span></div>
+                                <div class="card__img-raiting raiting">4.8<span></span></div>
+                            </div>
+                            <div class="special__card-title card-title"><span>Cappucino</span>
+                                <span>11k</span>
+                            </div>
+                            <div class="special__buttons">
+                                <div class="special__buttons-text">
+                                    <p>
+                                        Hot Cappucino
+                                    </p>
+                                </div>
+                                <button class=" __img btn--cart"><img src="img/cart-yellow.svg" alt="cart"></button>
+                            </div>
+                        </div>
+                        <div class="special__card card">
+                            <div class="special__img card__img cup"><img src="img/special5.jpg" alt="cofee">
+                                <div class="steam"><span></span><span></span><span></span></div>
+                                <div class="card__img-raiting raiting">4.8<span></span></div>
+                            </div>
+                            <div class="special__card-title card-title"><span>Moccacinno</span>
+                                <span>11k</span>
+                            </div>
+                            <div class="special__buttons">
+                                <div class="special__buttons-text">
+                                    <p>
+                                        Hot Moccacino
+                                    </p>
+                                </div>
+                                <button class=" __img btn--cart"><img src="img/cart-yellow.svg" alt="cart"></button>
+                            </div>
+                        </div>
+                        <div class="special__card card">
+                            <div class="special__img card__img"><img src="img/special6.jpg" alt="cofee">
+                                <div class="card__img-raiting raiting">4.8<span></span></div>
+                            </div>
+                            <div class="special__card-title card-title"><span>Waffle Ice Crem</span>
+                                <span>11k</span>
+                            </div>
+                            <div class="special__buttons">
+                                <div class="special__buttons-text">
+                                    <p>
+                                        Wafle with Ice cream
+                                    </p>
+                                </div>
+                                <button class=" __img btn--cart"><img src="img/cart-yellow.svg" alt="cart"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="say anim">
+                <div class="say__container">
+                    <div class="say__content">
+                        <div class="say__content-text">
+                            <div class="say__title title">What they say about us</div>
+                            <div class="say__subtitle">
+                                <p>
+                                    We always provide the best service and always maintain the quality of coffee
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="say__items">
+                    <div class="say__decor">
+                    </div>
+                    <div class="say__slider">
+                        <div class="say__slider-content">
+                            <div class="say__slider-items swiper-wrapper">
+                                <div class="say__slide slide-say swiper-slide">
+                                    <div class="slide-say__img"><img src="img/slide1.jpg" alt="man"></div>
+                                    <div class="slide-say__text">
+                                        <div class="slide-say__title">Naura</div>
+                                        <div class="slide-say__subtitle">
+                                            <p>
+                                                I really love the cappucino, the coffee was very smooth
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="say__slide slide-say swiper-slide">
+                                    <div class="slide-say__img"><img src="img/slide2.jpg" alt="man"></div>
+                                    <div class="slide-say__text">
+                                        <div class="slide-say__title">John</div>
+                                        <div class="slide-say__subtitle">
+                                            <p>
+                                                this coffee shop is very convenient
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="say__slide slide-say swiper-slide">
+                                    <div class="slide-say__img"><img src="img/slide3.jpg" alt="man"></div>
+                                    <div class="slide-say__text">
+                                        <div class="slide-say__title">Azura</div>
+                                        <div class="slide-say__subtitle">
+                                            <p>
+                                                the coffee menu here is very much
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="say__slide slide-say swiper-slide">
+                                    <div class="slide-say__img"><img src="img/slide1.jpg" alt="man"></div>
+                                    <div class="slide-say__text">
+                                        <div class="slide-say__title">Naura</div>
+                                        <div class="slide-say__subtitle">
+                                            <p>
+                                                I really love the cappucino, the coffee was very smooth
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="say__slide slide-say swiper-slide">
+                                    <div class="slide-say__img"><img src="img/slide2.jpg" alt="man"></div>
+                                    <div class="slide-say__text">
+                                        <div class="slide-say__title">John</div>
+                                        <div class="slide-say__subtitle">
+                                            <p>
+                                                this coffee shop is very convenient
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="say__slide slide-say swiper-slide">
+                                    <div class="slide-say__img"><img src="img/slide3.jpg" alt="man"></div>
+                                    <div class="slide-say__text">
+                                        <div class="slide-say__title">Azura</div>
+                                        <div class="slide-say__subtitle">
+                                            <p>
+                                                the coffee menu here is very much
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer anim">
+            <div class="footer__container">
+                <div class="footer-bg decor__img"><img src="img/footer-bg.jpg" alt="bg"></div>
+                <div class="footer__form">
+                    <div class="footre__title title">Subscribe to get 50% discount price</div>
+                    <form action="#" class="form-footer">
+                        <input type="text" placeholder="Email address" class="form-footer__input">
+                        <button type="submit" class="button--black">Order now</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

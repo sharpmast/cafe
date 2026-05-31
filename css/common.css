@@ -1,0 +1,172 @@
+.decor__img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.raiting {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+      border-radius: 42px;
+  background-color: #fff;
+    border: 6px solid #0000001f;
+  padding-inline: clamp(30px,3.7vw,60px);
+  padding-block: clamp(10px,1.7vw,16px);
+  font-size:clamp(16px,1.8vw,24px) ;
+  font-weight: 700;
+}
+.raiting span{
+   width: 20px;
+    min-height: 20px;
+    background: url(../img/star.svg) center /cover no-repeat;
+}
+.button--black {
+    padding: 12px 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 33px;
+    color: #ffffff;
+    background: #2F2105;
+    transition: .3s;
+}
+.button--black:hover{
+    color: #FF902B;
+    background: #3b2801;
+
+}
+.decor__img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.title {
+font-size: 32px;
+font-weight: 700;
+text-transform: capitalize;
+}
+.title span{
+position: relative;
+}
+.title span:before{
+position: absolute;
+content: '';
+left: 0;
+bottom: 6px;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background: #FF902B;
+}
+.card {
+    padding-block: 20px;
+    padding-inline: 14px;
+    background: #ffffff;
+    border-radius: 15px;
+
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 24px;
+    padding-inline: 10px;
+    margin-top: 19px;
+}
+.items {
+    display: grid;
+    gap: clamp(25px,2vw,44px);
+    grid-template-columns: repeat(3,minmax(240px,343px));
+    justify-content: center;
+}
+.card__img-raiting {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    margin: 15px;
+    padding: 3px 10px;
+    border: 4px solid #0000001f;
+}
+.card__img-raiting  span {
+ width: 11px;
+    min-height: 11px;
+}
+.card__img {
+    aspect-ratio: 326 / 234;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.anim {
+    opacity: 0;
+    transform: translateY(50px);
+    transition-delay: .4s;
+    transition: all 0.6s ease;
+}
+
+.anim.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card {
+    opacity: 0;
+    transform: perspective(1000px) rotateX(40deg);
+     transition: all 2.2s cubic-bezier(.22, 1, .36, 1);
+}
+
+.card.show {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(0);
+}
+.cup {
+    position: relative;
+    display: inline-block;
+}
+
+.steam {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+    z-index: 4;
+}
+
+/* окремі струйки пари */
+.steam span {
+    position: absolute;
+    bottom: 0;
+    width: 26px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.607);
+    border-radius: 50%;
+    filter: blur(7px);
+    animation: steamUp 2.5s infinite ease-in-out;
+}
+
+/* позиції */
+.steam span:nth-child(1) { left: 10px; animation-delay: 0s; }
+.steam span:nth-child(2) { left: 25px; animation-delay: .6s; }
+.steam span:nth-child(3) { left: 40px; animation-delay: 1.2s; }
+
+/* анімація пари */
+@keyframes steamUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-60px) scale(1.6);
+        opacity: 0;
+    }
+}
