@@ -434,6 +434,8 @@ border-radius: 15px;
     margin-top: 20px;
 }
 .say {
+    max-width: 1440px;
+    margin: 0 auto;
     position: relative;
     padding-top: 20px;
     padding-bottom: 60px;
